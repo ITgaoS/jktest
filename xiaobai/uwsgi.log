@@ -1,0 +1,82 @@
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Aug 21 02:59:55 2020] ***
+compiled with version: 8.3.0 on 21 August 2020 01:56:05
+os: Linux-3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020
+nodename: eb57977e9ca3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/xiaobai
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xiaobai
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+bind(): Cannot assign requested address [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Aug 21 03:05:04 2020] ***
+compiled with version: 8.3.0 on 21 August 2020 01:56:05
+os: Linux-3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020
+nodename: eb57977e9ca3
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/xiaobai
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xiaobai
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8081 fd 3
+uwsgi socket 0 bound to UNIX address /home/xiaobai/uwsgi.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.12 (default, Aug 18 2020, 04:20:58)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55c544cbe8f0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 498800 bytes (487 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c544cbe8f0 pid: 769 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 769)
+spawned uWSGI worker 1 (pid: 771, cores: 2)
+spawned uWSGI worker 2 (pid: 772, cores: 2)
+spawned uWSGI worker 3 (pid: 773, cores: 2)
+spawned uWSGI worker 4 (pid: 774, cores: 2)
+spawned uWSGI http 1 (pid: 775)
+[pid: 771|app: 0|req: 1/1] 192.168.3.32 () {40 vars in 793 bytes} [Fri Aug 21 03:05:41 2020] GET / => generated 16351 bytes in 56 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+Not Found: /static/admin/css/fonts.css
+[pid: 772|app: 0|req: 1/2] 192.168.3.32 () {40 vars in 770 bytes} [Fri Aug 21 03:05:42 2020] GET /static/admin/css/fonts.css => generated 2022 bytes in 59 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 774|app: 0|req: 1/3] 192.168.3.32 () {38 vars in 772 bytes} [Fri Aug 21 03:32:17 2020] GET /admin => generated 0 bytes in 26 msecs (HTTP/1.1 301) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 773|app: 0|req: 1/4] 192.168.3.32 () {38 vars in 774 bytes} [Fri Aug 21 03:32:17 2020] GET /admin/ => generated 0 bytes in 60 msecs (HTTP/1.1 302) 9 headers in 331 bytes (1 switches on core 0)
+[pid: 772|app: 0|req: 2/5] 192.168.3.32 () {38 vars in 811 bytes} [Fri Aug 21 03:32:18 2020] GET /admin/login/?next=/admin/ => generated 2194 bytes in 131 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 1)
+Not Found: /static/admin/js/nav_sidebar.js
+[pid: 772|app: 0|req: 3/6] 192.168.3.32 () {38 vars in 809 bytes} [Fri Aug 21 03:32:18 2020] GET /static/admin/js/nav_sidebar.js => generated 2034 bytes in 31 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/admin/css/responsive.css
+[pid: 771|app: 0|req: 3/7] 192.168.3.32 () {38 vars in 826 bytes} [Fri Aug 21 03:32:18 2020] GET /static/admin/css/responsive.css => generated 2037 bytes in 65 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/login.css
+[pid: 773|app: 0|req: 2/8] 192.168.3.32 () {38 vars in 816 bytes} [Fri Aug 21 03:32:18 2020] GET /static/admin/css/login.css => generated 2022 bytes in 77 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /static/admin/css/nav_sidebar.css
+[pid: 771|app: 0|req: 3/9] 192.168.3.32 () {38 vars in 828 bytes} [Fri Aug 21 03:32:18 2020] GET /static/admin/css/nav_sidebar.css => generated 2040 bytes in 85 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 774|app: 0|req: 2/10] 192.168.3.32 () {38 vars in 814 bytes} [Fri Aug 21 03:32:18 2020] GET /static/admin/css/base.css => generated 2019 bytes in 94 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+[pid: 774|app: 0|req: 3/11] 192.168.3.32 () {40 vars in 918 bytes} [Fri Aug 21 03:32:22 2020] GET /admin/login/?next=/admin/ => generated 2194 bytes in 56 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+Not Found: /static/admin/css/responsive.css
+[pid: 771|app: 0|req: 4/12] 192.168.3.32 () {38 vars in 826 bytes} [Fri Aug 21 03:32:23 2020] GET /static/admin/css/responsive.css => generated 2037 bytes in 5 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 773|app: 0|req: 3/13] 192.168.3.32 () {38 vars in 814 bytes} [Fri Aug 21 03:32:23 2020] GET /static/admin/css/base.css => generated 2019 bytes in 19 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/admin/css/login.css
+[pid: 772|app: 0|req: 5/14] 192.168.3.32 () {38 vars in 816 bytes} [Fri Aug 21 03:32:23 2020] GET /static/admin/css/login.css => generated 2022 bytes in 19 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /static/admin/css/nav_sidebar.css
+[pid: 772|app: 0|req: 5/15] 192.168.3.32 () {38 vars in 828 bytes} [Fri Aug 21 03:32:23 2020] GET /static/admin/css/nav_sidebar.css => generated 2040 bytes in 30 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
+Not Found: /static/admin/js/nav_sidebar.js
+[pid: 773|app: 0|req: 4/16] 192.168.3.32 () {38 vars in 809 bytes} [Fri Aug 21 03:32:23 2020] GET /static/admin/js/nav_sidebar.js => generated 2034 bytes in 24 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 1)
